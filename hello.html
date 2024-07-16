@@ -13,10 +13,28 @@
     <p> The natural world is an incredible wonder that inspires us all. It underpins our economy, our society, indeed our very existence. Our forests, rivers, oceans and soils provide us with the food we eat, the air we breathe, the water we irrigate our crops with. </p>
     <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-nature-mountain-scenery-with-flowers-free-photo.jpg?w=600&quality=80" alt="image">
     <a href="https://en.wikipedia.org/wiki/Nature">more info about nature</a>
-    <input type="radio" id="color" name="pick_your_color" value="green">green
-    <input type="radio" id="color" name="pick_your_color" value="blue">blue
-    <input type="radio" id="color" name="pick_your_color" value="red">red
+    <<button id="h2" onclick="changeBackgroundColor('Green')"> Change background Color</button>
+    <<button id="h2" onclick="changeBackgroundColor('Black')"> Change background Color</button>
+<form>
+<input type="radio" name="color" value="blue" id="blue"> <label for="blue">Blue</label><br>
+<input type="radio" name="color" value="green" id="green"> <label for="green">Green</label><br>
+<input type="radio" name="color" value="red" id="red"> <label for="red">Red</label><br>
+</form>
     <style> 
+    body{background-color:blue;}
+</style>
+<script>   
 
+
+function changeBackgroundColor(color) {
+    document.body.style.backgroundColor = color;
+}
+
+
+
+
+
+ </script>
 </body>
+
 </html>
